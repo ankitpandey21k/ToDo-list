@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/691bf0536a.js" crossorigin="anonymous"></script>
+    <title>TodoList</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- container -->
+    <div class="container">
+        <div class="todo-app">
+            <h2> To-Do List</h2>
+            <!-- input-box -->
+            <div class="row">
+                <input type="text" id="input-box" placeholder="Type your todo list">
+                <i id="plus" onclick="addTask()" onclick="taskcount()"  class="fas fa-plus plus"></i>
+            </div>
+        <!-- task complete -->
+            <ul class="task">
+                <ul class="complete">
+                    
+                    <li> <i class="fa-solid fa-check-double"></i>  Complete all tasks</li>
+                </ul>
+                <ul class="completed">
+                    <li>Clear completed</li>
+                </ul>
+            </ul>
+           
+            <!-- list-container -->
+            <ul id="list-container" class="list">
+                    <!-- <li class="checked">ankitpandey</li>
+                    <li>yoyo</li> -->
+            </ul>
+            
+            <!-- footer -->
+            <div class="filter">
+                <ul class="footer-last">
+                    <li class="task-count" id="task-count"> <p><span id="counter">0</span> tasks left</p></li>
+                </ul>
+                
+                    <ul class="footer-s">
+                      <li class="footer"> <b>All</b></li>
+                       <li class="footer">Completed</li>
+                      <li class="footer">Uncompleted</li>
+                 </ul>
+            </div>
+        </div>
+    </div>
+
+   <script src="script.js"></script>
+</body>
+</html>
